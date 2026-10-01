@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap');
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 188 95% 37%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 188 95% 37%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 188 95% 37%;
+    --radius: 0.75rem;
+    
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 188 95% 37%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 15%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 188 95% 37%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 188 95% 37%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 188 95% 37%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 188 95% 37%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 188 95% 37%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DM Sans", sans-serif;
+    overflow-x: clip;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Outfit", sans-serif;
+    text-wrap: balance;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold leading-tight;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold leading-snug;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-semibold leading-snug;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-200 active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-all duration-200 active:scale-[0.98];
+  }
+
+  .card-elevated {
+    @apply bg-card rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all duration-200;
+  }
+
+  .link-hover {
+    @apply transition-colors duration-200 hover:text-primary;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Leaflet Map Overrides */
+.leaflet-container {
+  z-index: 10;
+}
+.leaflet-popup-content-wrapper {
+  border-radius: 0.75rem;
+  padding: 0;
+}
+.leaflet-popup-content {
+  margin: 1rem;
+  font-family: "DM Sans", sans-serif;
+}
