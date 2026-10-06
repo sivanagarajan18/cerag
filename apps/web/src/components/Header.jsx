@@ -44,7 +44,7 @@ const Header = () => {
               className="h-12 w-auto rounded-lg"
             />
             <div className="hidden sm:block">
-              <span className="text-xl font-bold text-foreground">CERAG</span>
+              <span className="text-xl font-bold text-foreground">CERAG™</span>
               <p className="text-xs text-muted-foreground">Dental Care Excellence</p>
             </div>
           </Link>

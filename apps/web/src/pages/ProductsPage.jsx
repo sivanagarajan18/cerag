@@ -9,21 +9,21 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 const ProductsPage = () => {
   const products = [
     {
-      image: 'https://github.com/sivanagarajan18/cerag/blob/939d9228167873a8722f5d75e290d675f18f7ce8/ChatGPT%20Image%20Mar%2019,%202026,%2012_08_06%20PM.png?raw=true',
-      title: 'CERAG SoftCare Toothbrush',
+      images: ['/images/pro-clean-white.png', '/images/pro-clean-brown.png', '/images/pro-clean-green.png','/images/travel-case.png'],
+      title: 'CERAG ProClean Toothbrush',
       description: 'Gentle yet effective cleaning with ultra-soft bristles designed for everyday comfort.',
-      featured: true
+      featured: false
     },
     {
-      image: 'https://github.com/sivanagarajan18/cerag/blob/939d9228167873a8722f5d75e290d675f18f7ce8/ChatGPT%20Image%20Mar%2019,%202026,%2012_26_07%20PM.png?raw=true',
+      images: ['/images/gum-shield-prot.png', '/images/benefits.png', '/images/power.png'],
+      title: 'CERAG Gum Shield',
+      description: 'Formulated to combine established oral-care ingredients with selected herbal extracts for everyday oral hygiene.',
+      featured: false
+    },
+    {
+      image: '/images/daily-care.png',
       title: 'CERAG Daily Protect Toothpaste',
       description: 'Fluoride-enriched formula for complete oral protection and long-lasting freshness.',
-      featured: true
-    },
-    {
-      image: 'https://raw.githubusercontent.com/sivanagarajan18/cerag/939d9228167873a8722f5d75e290d675f18f7ce8/ChatGPT%20Image%20Mar%2019%2C%202026%2C%2012_30_45%20PM.png',
-      title: 'CERAG Gum Care Gel',
-      description: 'Targeted care for healthier gums and improved oral hygiene.',
       featured: true
     }
   ];
@@ -41,7 +41,7 @@ const ProductsPage = () => {
       <Header />
 
       <main className="pt-20">
-        <section className="section-padding bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
+        <section className="section-padding bg-[linear-gradient(110deg,#172e28_0%,#3d5c3d_48%,#14131b_100%)] text-white">
           <div className="container-custom">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

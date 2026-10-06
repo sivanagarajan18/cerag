@@ -42,7 +42,7 @@ const AboutUsPage = () => {
       <Header />
 
       <main className="pt-20">
-        <section className="section-padding bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
+        <section className="section-padding bg-[linear-gradient(110deg,#172e28_0%,#3d5c3d_48%,#14131b_100%)] text-white">
           <div className="container-custom">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -116,7 +116,7 @@ const AboutUsPage = () => {
                 className="relative"
               >
                 <img
-                  src="https://github.com/sivanagarajan18/cerag/blob/main/ChatGPT%20Image%20Mar%2019,%202026,%2001_06_24%20PM.png?raw=true"
+                  src="/images/CEO.png"
                   alt="Professional dental team at CERAG clinic"
                   className="w-full h-auto rounded-2xl shadow-2xl"
                 />
@@ -157,7 +157,7 @@ const AboutUsPage = () => {
                 <h2 className="mb-6">Clinical Leadership</h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    With extensive clinical experience in dentistry, Dr. [Name] leads the research and development of CERAG products.
+                    With extensive clinical experience in dentistry, Dr. KalaiSelvi Siva leads the research and development of CERAG products.
                   </p>
                   <p>
                     Every formulation is carefully designed, tested, and validated to meet professional dental standards while being safe and effective for everyday use.
@@ -175,7 +175,7 @@ const AboutUsPage = () => {
                 className="relative"
               >
                 <img
-                  src="https://github.com/sivanagarajan18/cerag/blob/main/ChatGPT%20Image%20Mar%2019,%202026,%2002_49_51%20PM.png?raw=true"
+                  src="/images/CDO.png"
                   alt="Professional dental team at CERAG clinic"
                   className="w-full h-auto rounded-2xl shadow-2xl"
                 />

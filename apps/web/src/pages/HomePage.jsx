@@ -9,24 +9,26 @@ import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
 import WhatsAppButton from '@/components/WhatsAppButton';
 const HomePage = () => {
-  const products = [{
-      image: 'https://github.com/sivanagarajan18/cerag/blob/939d9228167873a8722f5d75e290d675f18f7ce8/ChatGPT%20Image%20Mar%2019,%202026,%2012_08_06%20PM.png?raw=true',
-      title: 'CERAG SoftCare Toothbrush',
+  const products = [
+    {
+      images: ['/images/pro-clean-white.png', '/images/pro-clean-brown.png', '/images/pro-clean-green.png','/images/travel-case.png'],
+      title: 'CERAG ProClean',
       description: 'Gentle yet effective cleaning with ultra-soft bristles designed for everyday comfort.',
-      featured: true
+      featured: false
     },
     {
-      image: 'https://github.com/sivanagarajan18/cerag/blob/939d9228167873a8722f5d75e290d675f18f7ce8/ChatGPT%20Image%20Mar%2019,%202026,%2012_26_07%20PM.png?raw=true',
-      title: 'CERAG Daily Protect Toothpaste',
+      images: ['/images/gum-shield-prot.png', '/images/benefits.png', '/images/power.png'],
+      title: 'CERAG Gum Shield',
+      description: 'Formulated to combine established oral-care ingredients with selected herbal extracts for everyday oral hygiene.',
+      featured: false
+    },
+    {
+      image: '/images/daily-care.png',
+      title: 'CERAG Daily Protect',
       description: 'Fluoride-enriched formula for complete oral protection and long-lasting freshness.',
       featured: true
-    },
-    {
-      image: 'https://raw.githubusercontent.com/sivanagarajan18/cerag/939d9228167873a8722f5d75e290d675f18f7ce8/ChatGPT%20Image%20Mar%2019%2C%202026%2C%2012_30_45%20PM.png',
-      title: 'CERAG Gum Care Gel',
-      description: 'Targeted care for healthier gums and improved oral hygiene.',
-      featured: true
-    }];
+    }
+  ];
   const features = [{
     icon: Shield,
     title: 'Dentist-approved quality',
@@ -167,7 +169,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        <section className="section-padding bg-slate-950 text-white">
+        <section className="section-padding bg-[linear-gradient(110deg,#172e28_0%,#3d5c3d_48%,#14131b_100%)] text-white">
           <div className="container-custom">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <motion.div initial={{
@@ -188,19 +190,19 @@ const HomePage = () => {
 
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/10 text-white">
                       <Phone className="w-6 h-6" />
                     </div>
                     <div>
                       <p className="text-sm text-slate-400">Phone</p>
-                      <a href="tel:+919629044797" className="text-white hover:text-primary transition-colors duration-200">
+                      <a href="tel:+917292954549" className="text-white hover:text-primary transition-colors duration-200">
                         +91 96290 44797
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-4">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/10 text-white">
                       <Mail className="w-6 h-6" />
                     </div>
                     <div>
@@ -212,7 +214,7 @@ const HomePage = () => {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary flex-shrink-0">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/10 text-white flex-shrink-0">
                       <MapPin className="w-6 h-6" />
                     </div>
                     <div>
