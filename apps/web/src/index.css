@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700;800;900&display=swap');
 @import 'leaflet/dist/leaflet.css';
 
 @tailwind base;
@@ -7,25 +7,25 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 98%;
     --foreground: 222 47% 11%;
     --card: 0 0% 100%;
     --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
-    --primary: 188 95% 37%;
+    --primary: 146.9 93.55% 12.16%;
     --primary-foreground: 0 0% 100%;
     --secondary: 210 40% 96%;
     --secondary-foreground: 222 47% 11%;
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
-    --accent: 188 95% 37%;
+    --accent: 146.9 93.55% 12.16%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 188 95% 37%;
+    --ring: 146.9 93.55% 12.16%;
     --radius: 0.75rem;
     
     --sidebar-background: 0 0% 98%;
@@ -35,7 +35,7 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 188 95% 37%;
+    --sidebar-ring: 146.9 93.55% 12.16%;
   }
 
   .dark {
@@ -45,28 +45,28 @@
     --card-foreground: 210 40% 98%;
     --popover: 222 47% 15%;
     --popover-foreground: 210 40% 98%;
-    --primary: 188 95% 37%;
+    --primary: 146.9 93.55% 12.16%;
     --primary-foreground: 0 0% 100%;
     --secondary: 217 33% 17%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
-    --accent: 188 95% 37%;
+    --accent: 146.9 93.55% 12.16%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
     --border: 217 33% 17%;
     --input: 217 33% 17%;
-    --ring: 188 95% 37%;
+    --ring: 146.9 93.55% 12.16%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 188 95% 37%;
+    --sidebar-primary: 146.9 93.55% 12.16%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 188 95% 37%;
+    --sidebar-ring: 146.9 93.55% 12.16%;
   }
 
   * {
@@ -79,13 +79,13 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Saira", sans-serif;
     overflow-x: clip;
     font-variant-numeric: tabular-nums;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Outfit", sans-serif;
+    font-family: "Saira", sans-serif;
     text-wrap: balance;
   }
 
@@ -158,5 +158,5 @@
 }
 .leaflet-popup-content {
   margin: 1rem;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Saira", sans-serif;
 }

@@ -30,8 +30,8 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: 'Phone',
-      content: '+91 96290 44797',
-      link: 'tel:+919629044797'
+      content: '+91 72929 54549',
+      link: 'tel:+917292954549'
     },
     {
       icon: Mail,
@@ -79,7 +79,7 @@ const ContactPage = () => {
       <Toaster />
 
       <main className="pt-20">
-        <section className="section-padding bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
+        <section className="section-padding bg-[linear-gradient(110deg,#172e28_0%,#3d5c3d_48%,#14131b_100%)] text-white">
           <div className="container-custom">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
